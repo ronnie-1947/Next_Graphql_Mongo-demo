@@ -1,0 +1,11 @@
+type  User {
+    id: ID
+    login: String
+    avatar_url: String
+}
+
+extend type  Query {
+    getUsers: [User]
+    getUser(name: String!): User!
+    greeting: String!
+}
